@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 2rem;
+  color: coral;
+  font-family: 'Sansita', Arial, Helvetica, sans-serif;
+  transition: ease 1s;
+}
+
+.vid1 video {
+  opacity: 0.25;
+  position: fixed;
+  right: 0;
+  top: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.pic1,
+.pic2,
+.pic3 {
+  position: relative;
+  opacity: 0.95;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* 
+Change background-attachment: scroll
+for normal scroll 
+*/
+
+  background-attachment: fixed;
+}
+
+.pic1 {
+  background-image: url(./img/pic2.jpg);
+  min-height: 100%;
+}
+
+.pic2 {
+  background-image: url(./img/pic3.jpg);
+  min-height: 400px;
+}
+
+.pic3 {
+  background-image: url(./img/pic4.jpg);
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 4rem;
+}
+.section h2 {
+  font-size: 2rem;
+  padding: 1rem;
+}
+.section > p {
+  background-color: coral;
+  padding: 2rem;
+  font-size: 1.25rem;
+  color: white;
+  letter-spacing: 2px;
+}
+.section-light {
+  background-color: lightgray;
+  color: black;
+}
+
+.section-dark {
+  background-color: coral;
+  color: white;
+}
+
+.pic-text {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  color: white;
+  font-size: 2.5rem;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  width: 100%;
+}
+.name {
+  font-size: 3rem;
+}
+
+.pic-text .border {
+  padding: 1rem;
+  background-color: coral;
+}
+
+h4,
+h5,
+h6 {
+  padding: 1rem;
+}
+
+h4 {
+  margin-top: 1rem;
+}
+
+.pic-text .border.trans {
+  background-color: transparent;
+}
+
+.footer {
+  font-size: 1rem;
+}
+
+@media (max-width: 568px) {
+  .pic1,
+  .pic2,
+  .pic3 {
+    background-attachment: scroll;
+  }
+}
